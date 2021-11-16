@@ -73,7 +73,7 @@ def parse_arguments():
     return args
 
 
-def generate_input_configs(template_str: str, var_maps: dict, output_dir: str, template_filename: str) -> None:
+def generate_input_configs(template_str: str, var_maps: dict, output_dir: str, template_filename: str, gensim_file_format: str) -> None:
     """Generates input configurations for the given variable map. The variable maps are replaced in the template file and stored as a new simulation configuration file in its respective simulation folder in the output directory.
     
     Args:
@@ -81,6 +81,7 @@ def generate_input_configs(template_str: str, var_maps: dict, output_dir: str, t
         var_maps (dict): dictionary containing the mapping of each template variable and its numerical value.
         output_dir (str): path of directory containing all the simulation directories.
         template_filename (str): path of the template file.
+        gensim_file_format (str): format of the input simulation file that will be generated.
         
     """
     
@@ -95,7 +96,7 @@ def generate_input_configs(template_str: str, var_maps: dict, output_dir: str, t
     output_filepath = os.path.join(
         output_dir,
         f"sim{var_maps['@serial_number@']}",
-        os.path.basename(template_filename).replace(".tpl", ".xml"),
+        os.path.basename(template_filename).replace(".tpl", f".{gensim_file_format}"),
     )
     try:
         os.makedirs(os.path.dirname(output_filepath))
@@ -133,6 +134,7 @@ def main():
             var_maps=var_map_i,
             output_dir=args.output_dir,
             template_filename=args.input_template,
+            gensim_file_format=args.input_format,
         )
         for var_map_i in var_map_list
     )
