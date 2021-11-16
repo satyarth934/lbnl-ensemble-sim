@@ -39,15 +39,27 @@ sample_ensemble_sims_dir
 │   └── run_amanzi.sh
 ├── sim0
 │   ├── farea_3d_tritium.xml
+│   ├── .
+│   ├── .
+│   ├── .
 │   └── run_sim0.sh
 ├── sim1
 │   ├── farea_3d_tritium.xml
+│   ├── .
+│   ├── .
+│   ├── .
 │   └── run_sim1.sh
 ├── sim2
 │   ├── farea_3d_tritium.xml
+│   ├── .
+│   ├── .
+│   ├── .
 │   └── run_sim2.sh
 └── sim3
     ├── farea_3d_tritium.xml
+│   ├── .
+│   ├── .
+│   ├── .
     └── run_sim3.sh
 ```
 
