@@ -274,13 +274,13 @@
       <material name="UUTRA">
         <comments>UUTRA</comments>
         <mechanical_properties>
-          <porosity value="0.4170492805135988" />
+          <porosity value="0.41633705818813127" />
           <particle_density value="2720.0" />
         </mechanical_properties>
 
-        <permeability x="4.363698788826776e-12" y="4.363698788826776e-12" z="4.363698788826776e-12" />
+        <permeability x="5.676486260691861e-12" y="5.676486260691861e-12" z="5.676486260691861e-12" />
         <cap_pressure model="van_genuchten">
-          <parameters alpha="0.00042601503046128873" m="0.5" optional_krel_smoothing_interval="500.0" sr="0.18" />
+          <parameters alpha="0.0004264243791105761" m="0.5" optional_krel_smoothing_interval="500.0" sr="0.18" />
         </cap_pressure>
         <rel_perm model="mualem" />
         <assigned_regions>Upper_aquifer,Basin1,Basin2,Basin3,TopBarrier1,TopBarrier2,TopBarrier3,TopBarrier4,TopBarrier5</assigned_regions>
@@ -360,7 +360,7 @@
         <assigned_regions>Ground_surface</assigned_regions>
         <liquid_phase name="water">
           <liquid_component name="water">
-            <seepage_face function="constant" inward_mass_flux="4.8178611010172425e-06" start="0.0 y" />
+            <seepage_face function="constant" inward_mass_flux="4.490242156776924e-06" start="0.0 y" />
           </liquid_component>
           <solute_component>
             <uniform_conc name="Tritium" value="1.0e-20" function="constant" start="0.0"/>
@@ -397,7 +397,7 @@
         <liquid_phase name="water">
           <liquid_component name="water">
             <inward_mass_flux function="constant" start="0.0 y" value="4.743e-06" />
-            <inward_mass_flux function="constant" start="1954.0 y" value="0.00023366078675646725" />
+            <inward_mass_flux function="constant" start="1954.0 y" value="0.00024061615151968726" />
             <inward_mass_flux function="constant" start="1988.0 y" value="0.0" />
           </liquid_component>
         <solute_component>
