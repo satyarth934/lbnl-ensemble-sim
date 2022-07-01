@@ -246,3 +246,5 @@ simulation_runs/
 resources/
 .templates/
 .variable_maps/
+amanzi_ensemble_configs_pflotran/
+
